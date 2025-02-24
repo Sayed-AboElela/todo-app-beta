@@ -22,7 +22,7 @@ const TodoApp = () => {
     console.log(tasks);
     
     return (
-        <div className="grid grid-cols-3 gap-4 p-6">
+        <div className="grid grid-cols-3 gap-6 p-8 ">
             {['Todo', 'In Progress', 'Done'].map((status) => (
                 <List
                     key={status}

@@ -15,7 +15,7 @@ const List = ({ title, tasks, onDragStart, onDragOver, onDrop }: Props) => {
     <div
       onDrop={() => onDrop(title.toLowerCase())}
       onDragOver={onDragOver}
-      className='drop-shadow-md bg-gray-400 text-black p-6 rounded-lg'
+      className='bg-gray-950/50 not-prose outline outline-white/5 overflow-auto p-8 rounded-lg max-h-300'
     >
       <h3 className='font-bold text-xl'>{title}</h3>
       {tasks.map(task => <Task key={task.id} {...task} onDragStart={onDragStart} />)}
